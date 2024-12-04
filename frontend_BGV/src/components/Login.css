@@ -1,0 +1,65 @@
+/* Login.css */
+
+/* Center the login form container */
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the header text */
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Style for the input fields */
+.login-container input {
+  width: 100%; /* Ensure full width */
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* Focus effect on input fields */
+.login-container input:focus {
+  outline: none;
+  border-color: #4CAF50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.6);
+}
+
+/* Style the login button */
+.login-container button {
+  width: 100%; /* Match input width */
+  padding: 12px; /* Same padding as inputs */
+  margin: 10px 0; /* Align spacing with inputs */
+  background-color: #808080; /* Grey button color */
+  color: white;
+  border: none;
+  border-radius: 4px; /* Match input border radius */
+  font-size: 16px;
+  cursor: pointer;
+  box-sizing: border-box; /* Ensure proper box model */
+}
+
+/* Hover effect for the button */
+.login-container button:hover {
+  background-color: #696969; /* Slightly darker shade */
+}
+
+/* Responsive styling for small screens */
+@media (max-width: 480px) {
+  .login-container input,
+  .login-container button {
+    font-size: 14px;
+  }
+}

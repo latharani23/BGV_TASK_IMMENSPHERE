@@ -1,0 +1,49 @@
+/* Styling for the navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f9fa; /* Light background color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow */
+  }
+  
+  /* Ensure the navbar brand title is aligned left */
+  .navbar-brand {
+    display: flex;
+    justify-content: flex-start; /* Align content to the left */
+    align-items: center;
+  }
+  
+  /* Container for the profile and logout icons, to align them right */
+  .navbar-icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    margin-right: 20px;
+  }
+  
+  /* Icon styling */
+  .icon {
+    font-size: 30px; /* Set icon size */
+    margin-left: 15px; /* Space between icons */
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Smooth scaling transition */
+  }
+  
+  /* Profile icon color */
+  .profile-icon {
+    color: #007bff; /* Blue color for the profile icon */
+  }
+  
+  /* Logout icon color */
+  .logout-icon {
+    color: #dc3545; /* Red color for the logout icon */
+  }
+  
+  /* Hover effect for icons */
+  .icon:hover {
+    transform: scale(1.2); /* Slightly enlarge the icons when hovered */
+  }
+  
