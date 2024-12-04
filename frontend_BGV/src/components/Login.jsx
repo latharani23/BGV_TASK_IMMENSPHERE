@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";  // Import useNavigate
 import './Login.css'; 
 
 const Login = () => {
@@ -11,6 +12,9 @@ const Login = () => {
 
   // State to store messages (success or error)
   const [message, setMessage] = useState("");
+
+  // useNavigate hook for redirecting
+  const navigate = useNavigate();
 
   // Handle form input changes
   const handleChange = (e) => {
@@ -32,11 +36,11 @@ const Login = () => {
       // On successful login, store the token (e.g., in localStorage or state)
       localStorage.setItem("token", response.data.token);
 
-      // Display success message or redirect to another page (e.g., dashboard)
+      // Display success message
       setMessage("Login successful!");
 
-      // Redirect to a different page after successful login (optional)
-      // window.location.href = "/dashboard"; // Or use `useNavigate()` for react-router v6
+      // Redirect to the Home page after successful login
+      navigate("/home");  // Use useNavigate to redirect
     } catch (error) {
       // Handle any errors (e.g., invalid credentials)
       setMessage(error.response ? error.response.data.message : "An error occurred");
